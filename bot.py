@@ -1,5 +1,6 @@
 
 import os
+import sys
 
 import discord
 from dotenv import load_dotenv
@@ -17,5 +18,6 @@ async def on_ready():
     )
 
     client.channels.get('the-after-hours').send('https://www.powerlanguage.co.uk/wordle/')
+    sys.exit(0)
 
 client.run(TOKEN)
